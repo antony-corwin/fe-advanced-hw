@@ -22,18 +22,19 @@ class Hamburger {
     this._stuffing = stuffing;
     this._toppings = [];
   }
-
   addTopping(topping) {
     this.toppings.includes(topping) ?
       this.toppings :
       this.toppings.push(topping);
   }
   removeTopping(topping) {
-    return this.toppings = this.toppings.filter(val => val !== topping);
+    this.toppings = this.toppings.filter(val => val !== topping);
   }
-
   get toppings() {
     return this._toppings;
+  }
+  set toppings(val) {
+    this._toppings = val;
   }
   get size() {
     return this._size;
@@ -142,4 +143,4 @@ console.log("Is hamburger large: ", hamburger.size === Hamburger.SIZE_LARGE); //
 hamburger.removeTopping(Hamburger.TOPPING_SPICE);
 
 // Смотрим сколько добавок
-console.log("Hamburger has %d toppings", hamburger.toppings.length); // 1
+console.log("Hamburger has %d toppings.", hamburger.toppings.length); // 1
