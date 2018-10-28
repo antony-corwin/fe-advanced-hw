@@ -1,0 +1,26 @@
+
+.preview {
+  padding: 0;
+  width: 1280px;
+  list-style: none;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.preview > li {
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease, transform 0.2s ease, opacity 0.2s ease;
+}
+
+.preview li:hover {
+  box-shadow: #f7f7f7 0 0 0 4px inset;
+  transform: translateY(-10px);
+  opacity: 0.5;
+}
+
+.active {
+  opacity: 0.5;
+}

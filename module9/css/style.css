@@ -1,0 +1,108 @@
+body {
+	text-align: center;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	background-color: #c0c0c0;
+}
+
+.time {
+	width: 50%;
+	margin: auto;
+	font-size: 130px;
+	color: #fff;
+	margin: auto;
+	background: #0080ff;
+	border-radius: 5px;
+	padding: 15px;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.btn {
+	background: #0080ff;
+	padding: 15px;
+	border: none;
+	font-size: 60px;
+	-ms-flex-preferred-size: 26%;
+	flex-basis: 16%;
+	min-width: 16%;
+	border-radius: 5px;
+	color: #fff;
+	margin: 0 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.laps {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	list-style-type: none;
+}
+
+.laps li {
+	width: 18%;
+	-ms-flex-preferred-size: 18%;
+	flex-basis: 18%;
+	color: #0080ff;
+	font-size: 40px;
+	font-weight: 700;
+	padding: 10px;
+}
+
+.stopwatch {
+	display: block;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.button:disabled {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	padding: 16px 32px;
+	border: none;
+	margin: 0 4px;
+	border-radius: 2px;
+	font-size: 16px;
+	outline: 0;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-family: inherit;
+	background-color: #0080ff;
+	color: #fff;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),
+		0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),
+		0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+	-webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	-o-transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.btn:active {
+	-webkit-box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),
+		0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+	box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),
+		0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.btn:disabled {
+	opacity: 0.6;
+}
