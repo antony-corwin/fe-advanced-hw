@@ -41,6 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         getAllUsers() {
+            document.querySelector("#js-update-info").textContent = "";
+            document.querySelector("#js-delete-info").textContent ='';
             fetch(this.url)
                 .then(response => {
                     if (response.ok) {
@@ -72,6 +74,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         getUserById() {
+            document.querySelector("#js-update-info").textContent = "";
+            document.querySelector("#js-delete-info").textContent ='';
             let id = document.querySelector(".js-getid").value;
             fetch(`${this.url}${id}`)
                 .then(response => {
@@ -102,6 +106,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         addUser() {
+            document.querySelector("#js-update-info").textContent = "";
+            document.querySelector("#js-delete-info").textContent ='';
             let name = document.querySelector(".js-name-value");
             let age = document.querySelector(".js-age-value");
             let user = {};
@@ -172,7 +178,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     document.querySelector(".js-new-user").textContent = "";
                     this.list.textContent = "";
                     document.querySelector(".js-user").textContent = "";
-                    document.querySelector("#js-delete-info").textContent = `User ID: ${userId} has been removed`;
+                    document.querySelector("#js-update-info").textContent = "";
+                    if (obj.status === 200) {
+                        document.querySelector("#js-delete-info").textContent = `User ID: ${userId} has been removed`;
+                    }
                 })
                 .catch(err => console.log(err));
         }
