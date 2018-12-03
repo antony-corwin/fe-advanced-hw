@@ -102,7 +102,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         addUser() {
-            debugger
             let name = document.querySelector(".js-name-value");
             let age = document.querySelector(".js-age-value");
             let user = {};
@@ -152,7 +151,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         removeUser() {
-            debugger
             let userId = document.querySelector(".js-remove-value").value;
 
             fetch(`https://test-users-api.herokuapp.com/users/${userId}`, {
@@ -180,7 +178,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         updateUser() {
-            debugger
             this.list.textContent = "";
             let userId = document.querySelector(".js-update-id").value;
             let userName = document.querySelector(".js-update-name").value;
