@@ -120,10 +120,6 @@ const filter = {
     release_date: [],
 };
 
-function log(str) {
-    console.log(str)
-}
-
 const resetFilter = () => {
     filter.size = [];
     filter.color = [];
