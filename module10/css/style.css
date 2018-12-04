@@ -22,7 +22,7 @@ body {
     padding: 0 10px;
 }
 
-/* .list-group {
+.list-group {
   max-height: 85vh;
   overflow-y: auto;
   margin-top: 10px;
@@ -30,7 +30,7 @@ body {
 
 .list-group-item {
   font-size: 15px;
-} */
+}
 
 .input-group {
     margin-top: 10px;
