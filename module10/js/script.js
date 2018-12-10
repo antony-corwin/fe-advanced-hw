@@ -39,9 +39,11 @@ class UserApi {
         this.updatePerson.addEventListener("click", this.updateUser.bind(this));
     }
 
-    list = document.querySelector(".js-list");
 
 
+markdown() {
+    this.list = document.querySelector(".js-list");
+}
 
     getAllUsers() {
         document.querySelector("#js-update-info").textContent = "";
