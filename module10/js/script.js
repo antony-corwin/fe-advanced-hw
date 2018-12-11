@@ -26,7 +26,7 @@ const apiUrl = "https://test-users-api.herokuapp.com/users/";
 class UserApi {
     constructor(url) {
         this.url = url;
-        this.list = list;
+        this.list = list = document.querySelector(".js-list");
         this.getAllUsersBtn = document.querySelector(".js-get-all-users");
         this.getUserByIdBtn = document.querySelector(".js-get-user");
         this.addPerson = document.querySelector(".js-add-user");
@@ -38,10 +38,6 @@ class UserApi {
         this.removePerson.addEventListener("click", this.removeUser.bind(this));
         this.updatePerson.addEventListener("click", this.updateUser.bind(this));
     }
-
-    list = document.querySelector(".js-list");
-
-
 
     getAllUsers() {
         document.querySelector("#js-update-info").textContent = "";
