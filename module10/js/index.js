@@ -4,9 +4,9 @@ const container = document.querySelector(".container");
 class UserApi {
     constructor(url) {
         this.url = url;
-        this.usersInfo = document.querySelector('.js-list');
-        this.trygetAllUsersButton = document.querySelector('js-get-all-users');
-        this.trygetAllUsersButton = addEventListener('click', this.getAllUsers.bind(this));
+        this.createMarkdown = this.createMarkdown();
+        // this.addListenerToButton= this.addListenerToButton();
+        this.usersInfo = document.querySelector('.js-all-users-group');
         this.getOneUserButton = document.querySelector(".js-get-by-id");
         this.getOneUserButton = addEventListener("click", this.getOneUser.bind(this));
     }
@@ -67,9 +67,9 @@ class UserApi {
             inputLabel.append(labelSpan);
         }
 
-        function addUserInfoGroup(parentNode) {
+        function addUserInfoGroup(groupName, parentNode) {
             const listGroup = document.createElement("ul");
-            listGroup.classList.add('list-group', 'js-list');
+            listGroup.classList.add('list-group', groupName);
             listGroup.style.maxHeight = '85vh';
             listGroup.style.overflowY = 'auto';
             listGroup.style.marginTop = '10px';
@@ -87,18 +87,21 @@ class UserApi {
             pNode.append(listInfoItem);
         }
 
+
+
         function blockGetAllUsers() {
 
             addMenuBlock('menuGetAllUsers', 'menu-get-all-users', 'menu');
             addButton('getAllUsersButton', 'Get all users', 'js-get-all-users', 'menu-get-all-users');
-            addUserInfoGroup('menu-get-all-users');
+            addUserInfoGroup('js-all-users-group', 'menu-get-all-users');
+            // addListenerToButton('js-get-all-users')
         }
 
         function blockGetOneUser() {
             addMenuBlock('menuGetOneUser', 'menu-get-one-user', 'menu');
             addButton('getOneUsersButton', 'Get user by ID', 'js-get-one-user', 'menu-get-one-user');
             addInput('js-get-by-id', 'UID', ` Enter user's ID`, 'menu-get-one-user');
-            addUserInfoGroup('menu-get-one-user');
+            addUserInfoGroup('js-one-user-group', 'menu-get-one-user');
             addUserInfoItem('menu-get-one-user');
         }
 
@@ -107,14 +110,14 @@ class UserApi {
             addButton('createUserButton', 'Create new user', 'js-create-user', 'menu-create-user');
             addInput('js-name-value', 'Name', ` Enter user's name`, 'menu-create-user');
             addInput('js-age-value', 'Age', ` Enter user's age`, 'menu-create-user');
-            addUserInfoGroup('menu-create-user');
+            addUserInfoGroup('js-create-user-group', 'menu-create-user');
         }
 
         function blockRemoveOneUser() {
             addMenuBlock('menuRemoveOneUser', 'menu-remove-one-user', 'menu');
             addButton('removeOneUserButton', 'Remove user by ID', 'js-remove-user', 'menu-remove-one-user');
             addInput('js-remove-by-id', 'UID', ` Enter user's ID`, 'menu-remove-one-user');
-            addUserInfoGroup('menu-remove-one-user');
+            addUserInfoGroup('js-remove-user-group', 'menu-remove-one-user');
         }
 
         function blockUpdateUser() {
@@ -122,7 +125,14 @@ class UserApi {
             addButton('updateUserButton', 'Update user by ID', 'js-update-user', 'menu-update-user');
             addInput('js-name-value', 'Name', ` Enter user's name`, 'menu-update-user');
             addInput('js-age-value', 'Age', ` Enter user's age`, 'menu-update-user');
-            addUserInfoGroup('menu-update-user');
+            addUserInfoGroup('js-update-user-group', 'menu-update-user');
+        }
+
+        function addListenerToButton(button) {
+            // event.preventDefault();
+            // event.stopPropagation();
+            const addListener = document.querySelector(`.${button}`);
+            addListener.addEventListener('click', UserApi.getAllUsers());
         }
 
         // create all markdown
@@ -132,6 +142,7 @@ class UserApi {
         blockCreateUser();
         blockRemoveOneUser();
         blockUpdateUser();
+        addListenerToButton('js-get-all-users');
     }
 
     fetchApi(id) {
@@ -166,14 +177,15 @@ class UserApi {
         document.querySelector(".list-info-item").value = "";
     }
 
+
+
     getOneUser() {
         const userId = document.querySelector(".js-get-by-id").value;
         this.fetchApi(userId);
 
     }
 
-    getAllUsers() {
-        event.stopPropagation();
+    static getAllUsers() {
         fetch(this.url)
             .then(response => {
                 if (response.ok) {
@@ -184,6 +196,7 @@ class UserApi {
             })
             .then(data => {
                 let arr = data.data;
+                console.log(arr);
                 return arr;
             })
             .then(arr => {
@@ -207,5 +220,5 @@ class UserApi {
 
 document.addEventListener("DOMContentLoaded", () => {
     let user = new UserApi(apiUrl);
-    user.createMarkdown();
+    user.createMarkdown;
 });
