@@ -126,44 +126,9 @@ class UserApi {
         }
 
         function addListenerToButton(button, func) {
-            // event.preventDefault();
-            // event.stopPropagation();
             const addListener = document.querySelector(`.${button}`);
             addListener.addEventListener('click', func);
         }
-
-        let getAllUsers = function () {
-            fetch('https://test-users-api.herokuapp.com/users/')
-                .then(response => {
-                    if (response.ok) {
-                        return response.json();
-                    } else {
-                        throw new Error(`ERROR: ${response.statusText}`);
-                    }
-                })
-                .then(data => {
-                    let arr = data.data;
-                    console.log(arr);
-                    return arr;
-                })
-                .then(arr => {
-                    let liArray = arr.map(elem => {
-                        const userInfoLi = document.createElement("li");
-                        const userId = document.createElement("p");
-                        const userName = document.createElement("p");
-                        const userAge = document.createElement("p");
-                        userId.textContent = `UID: ${elem.id}`;
-                        userName.textContent = `User name: ${elem.name}`;
-                        userAge.textContent = `User age: ${elem.age}`;
-                        userInfoLi.append(userId, userName, userAge);
-                        document.querySelector(".js-get-all-users").value = "";
-                        return userInfoLi;
-                    });
-                    const usersInfo = document.querySelector('.js-all-users-group');
-                    usersInfo.append(...liArray);
-                })
-                .catch(err => console.log(err));
-        };
 
         function fetchApi(id) {
 
@@ -197,11 +162,85 @@ class UserApi {
             document.querySelector(".list-info-item").value = "";
         }
 
+        const getAllUsers = function () {
+            fetch('https://test-users-api.herokuapp.com/users/')
+                .then(response => {
+                    if (response.ok) {
+                        return response.json();
+                    } else {
+                        throw new Error(`ERROR: ${response.statusText}`);
+                    }
+                })
+                .then(data => {
+                    let arr = data.data;
+                    console.log(arr);
+                    return arr;
+                })
+                .then(arr => {
+                    let usersArray = arr.map(elem => {
+                        const userInfoLi = document.createElement("li");
+                        const userId = document.createElement("p");
+                        const userName = document.createElement("p");
+                        const userAge = document.createElement("p");
+                        userId.textContent = `UID: ${elem.id}`;
+                        userName.textContent = `User name: ${elem.name}`;
+                        userAge.textContent = `User age: ${elem.age}`;
+                        userInfoLi.append(userId, userName, userAge);
+                        document.querySelector(".js-get-all-users").value = "";
+                        return userInfoLi;
+                    });
+                    const usersInfo = document.querySelector('.js-all-users-group');
+                    usersInfo.append(...usersArray);
+                })
+                .catch(err => console.log(err));
+        };
 
-        let getOneUser = function () {
+        const getOneUser = function () {
             const userId = document.querySelector(".js-get-by-id").value;
             fetchApi(userId);
 
+        };
+
+        const createOneUser = function () {
+            const userName = document.querySelector('js-name-value');
+            const userAge = document.querySelector('js-age-value');
+            const user = {};
+            user.name = userName.value;
+            user.age = +userAge.value;
+            fetch("https://test-users-api.herokuapp.com/users", {
+                method: "POST",
+                body: JSON.stringify(user),
+                headers: {
+                    Accept: "application/json",
+                    "Content-Type": "application/json"
+                }
+            })
+                .then(response => {
+                    if (response.ok) {
+                        return response.json();
+                    } else {
+                        throw new Error(`ERROR: ${response.statusText}`);
+                    }
+                })
+                .then(obj => {
+                    userName.value = "";
+                    userAge.value = "";
+                    this.list.textContent = "";
+                    document.querySelector(".js-user").textContent = "";
+                    let user = obj.data;
+                    if (obj.status === 201) {
+                        let li = document.querySelector(".js-new-user");
+                        li.textContent = "";
+                        let pID = document.createElement("p");
+                        let pName = document.createElement("p");
+                        let pAge = document.createElement("p");
+                        pID.textContent = `UID: ${user._id}`;
+                        pName.textContent = `User name: ${user.name}`;
+                        pAge.textContent = `User age: ${user.age}`;
+                        li.append(pID, pName, pAge);
+                    }
+                })
+                .catch(err => console.log(err));
         };
 
         // create all markdown
@@ -213,6 +252,9 @@ class UserApi {
         blockUpdateUser();
         addListenerToButton('js-get-all-users', getAllUsers);
         addListenerToButton('js-get-one-user', getOneUser);
+        addListenerToButton('js-create-user', createOneUser);
+        // addListenerToButton('js-delete-user', getOneUser);
+        // addListenerToButton('js-update-user', getOneUser);
 
     }
 

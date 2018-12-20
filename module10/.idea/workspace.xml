@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9937adae-6876-40fa-9bcf-71203f979b05" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -15,10 +14,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.26972282">
+    <splitter split-orientation="horizontal" split-proportion="0.3719705">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="320">
@@ -49,14 +48,15 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/script.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="160">
-                  <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+                <state relative-caret-position="-200">
+                  <caret line="106" selection-start-line="106" selection-end-line="106" />
                   <folding>
                     <element signature="e#14#921#0" />
-                    <element signature="n#!!block;n#addUser#0;n#UserApi#0" />
+                    <element signature="n#!!block;n#getAllUsers#0;n#UserApi#0" />
+                    <element signature="n#!!block;n#getUserById#0;n#UserApi#0" />
                     <element signature="n#!!block;n#removeUser#0;n#UserApi#0" />
                     <element signature="n#!!block;n#updateUser#0;n#UserApi#0" />
                   </folding>
@@ -80,8 +80,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="453">
-                  <caret line="214" column="44" selection-start-line="214" selection-start-column="44" selection-end-line="214" selection-end-column="44" />
+                <state relative-caret-position="4193">
+                  <caret line="236" column="56" selection-start-line="236" selection-start-column="56" selection-end-line="236" selection-end-column="56" />
                 </state>
               </provider>
             </entry>
@@ -115,9 +115,9 @@
       <find>btnName</find>
       <find>addUl</find>
       <find>form-control</find>
-      <find>js-user</find>
       <find>addUserInfoGroup</find>
       <find>getOneUser</find>
+      <find>js-user</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -214,12 +214,12 @@
       <workItem from="1544449123598" duration="7499000" />
       <workItem from="1544631703664" duration="3340000" />
       <workItem from="1545133515625" duration="9144000" />
-      <workItem from="1545289227474" duration="708000" />
+      <workItem from="1545289227474" duration="3918000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64213000" />
+    <option name="totallyTimeSpent" value="67423000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -312,23 +312,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
+    <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-          <folding>
-            <element signature="e#14#921#0" />
-            <element signature="n#!!block;n#addUser#0;n#UserApi#0" />
-            <element signature="n#!!block;n#removeUser#0;n#UserApi#0" />
-            <element signature="n#!!block;n#updateUser#0;n#UserApi#0" />
-          </folding>
+        <state relative-caret-position="80">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/index.js">
+    <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="214" column="44" selection-start-line="214" selection-start-column="44" selection-end-line="214" selection-end-column="44" />
+        <state relative-caret-position="-200">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
+          <folding>
+            <element signature="e#14#921#0" />
+            <element signature="n#!!block;n#getAllUsers#0;n#UserApi#0" />
+            <element signature="n#!!block;n#getUserById#0;n#UserApi#0" />
+            <element signature="n#!!block;n#removeUser#0;n#UserApi#0" />
+            <element signature="n#!!block;n#updateUser#0;n#UserApi#0" />
+          </folding>
         </state>
       </provider>
     </entry>
