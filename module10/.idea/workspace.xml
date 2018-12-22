@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9937adae-6876-40fa-9bcf-71203f979b05" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/new.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index_.html" beforeDir="false" afterPath="$PROJECT_DIR$/index_.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -14,27 +18,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.3719705">
+    <splitter split-orientation="horizontal" split-proportion="0.460177">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="320">
-                  <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+                <state relative-caret-position="415">
+                  <caret line="24" column="38" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="38" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index_.html">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js/new.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-                  <folding>
-                    <element signature="n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                  </folding>
+                <state relative-caret-position="-965">
+                  <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -42,33 +42,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="920">
-                  <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js/script.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-200">
-                  <caret line="106" selection-start-line="106" selection-end-line="106" />
-                  <folding>
-                    <element signature="e#14#921#0" />
-                    <element signature="n#!!block;n#getAllUsers#0;n#UserApi#0" />
-                    <element signature="n#!!block;n#getUserById#0;n#UserApi#0" />
-                    <element signature="n#!!block;n#removeUser#0;n#UserApi#0" />
-                    <element signature="n#!!block;n#updateUser#0;n#UserApi#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="80">
-                  <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+                <state relative-caret-position="155">
+                  <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -80,8 +55,36 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="4193">
-                  <caret line="236" column="56" selection-start-line="236" selection-start-column="56" selection-end-line="236" selection-end-column="56" />
+                <state relative-caret-position="420">
+                  <caret line="153" column="67" lean-forward="true" selection-start-line="153" selection-start-column="52" selection-end-line="153" selection-end-column="68" />
+                  <folding>
+                    <element signature="n#!!block;n#addMenuBlock#0;n#!!block;n#createMarkdown#0;n#UserApi#0" />
+                    <element signature="n#!!block;n#addButton#0;n#!!block;n#createMarkdown#0;n#UserApi#0" />
+                    <element signature="n#!!block;n#addInput#0;n#!!block;n#createMarkdown#0;n#UserApi#0" />
+                    <element signature="n#!!block;n#addUserInfoGroup#0;n#!!block;n#createMarkdown#0;n#UserApi#0" />
+                    <element signature="n#!!block;n#addUserInfoItem#0;n#!!block;n#createMarkdown#0;n#UserApi#0" />
+                    <element signature="n#!!block;n#blockGetAllUsers#0;n#!!block;n#createMarkdown#0;n#UserApi#0" />
+                    <element signature="n#!!block;n#blockGetOneUser#0;n#!!block;n#createMarkdown#0;n#UserApi#0" />
+                    <element signature="n#!!block;n#blockCreateUser#0;n#!!block;n#createMarkdown#0;n#UserApi#0" />
+                    <element signature="n#!!block;n#blockRemoveOneUser#0;n#!!block;n#createMarkdown#0;n#UserApi#0" />
+                    <element signature="n#!!block;n#blockUpdateUser#0;n#!!block;n#createMarkdown#0;n#UserApi#0" />
+                    <element signature="n#!!block;n#addListenerToButton#0;n#!!block;n#createMarkdown#0;n#UserApi#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/script.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="464">
+                  <caret line="78" column="55" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="55" />
+                  <folding>
+                    <element signature="e#14#921#0" />
+                    <element signature="n#!!block;n#addUser#0;n#UserApi#0" />
+                    <element signature="n#!!block;n#removeUser#0;n#UserApi#0" />
+                    <element signature="n#!!block;n#updateUser#0;n#UserApi#0" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -118,6 +121,7 @@
       <find>addUserInfoGroup</find>
       <find>getOneUser</find>
       <find>js-user</find>
+      <find>js-get-by-id</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -126,11 +130,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/index_.html" />
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/js/index.js" />
+        <option value="$PROJECT_DIR$/index_.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/new.js" />
       </list>
     </option>
   </component>
@@ -163,10 +168,6 @@
               <item name="module10" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="module10" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -176,7 +177,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../goit-javascript/JS-HW-12" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -214,18 +215,19 @@
       <workItem from="1544449123598" duration="7499000" />
       <workItem from="1544631703664" duration="3340000" />
       <workItem from="1545133515625" duration="9144000" />
-      <workItem from="1545289227474" duration="3918000" />
+      <workItem from="1545289227474" duration="15500000" />
+      <workItem from="1545487508160" duration="2950000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67423000" />
+    <option name="totallyTimeSpent" value="81955000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.10712401" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10695469" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -287,17 +289,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index_.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+        <state relative-caret-position="-98">
+          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
           <folding>
             <element signature="n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -305,31 +300,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+        <state relative-caret-position="464">
+          <caret line="78" column="55" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="55" />
+          <folding>
+            <element signature="e#14#921#0" />
+            <element signature="n#!!block;n#addUser#0;n#UserApi#0" />
+            <element signature="n#!!block;n#removeUser#0;n#UserApi#0" />
+            <element signature="n#!!block;n#updateUser#0;n#UserApi#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        <state relative-caret-position="420">
+          <caret line="153" column="67" lean-forward="true" selection-start-line="153" selection-start-column="52" selection-end-line="153" selection-end-column="68" />
+          <folding>
+            <element signature="n#!!block;n#addMenuBlock#0;n#!!block;n#createMarkdown#0;n#UserApi#0" />
+            <element signature="n#!!block;n#addButton#0;n#!!block;n#createMarkdown#0;n#UserApi#0" />
+            <element signature="n#!!block;n#addInput#0;n#!!block;n#createMarkdown#0;n#UserApi#0" />
+            <element signature="n#!!block;n#addUserInfoGroup#0;n#!!block;n#createMarkdown#0;n#UserApi#0" />
+            <element signature="n#!!block;n#addUserInfoItem#0;n#!!block;n#createMarkdown#0;n#UserApi#0" />
+            <element signature="n#!!block;n#blockGetAllUsers#0;n#!!block;n#createMarkdown#0;n#UserApi#0" />
+            <element signature="n#!!block;n#blockGetOneUser#0;n#!!block;n#createMarkdown#0;n#UserApi#0" />
+            <element signature="n#!!block;n#blockCreateUser#0;n#!!block;n#createMarkdown#0;n#UserApi#0" />
+            <element signature="n#!!block;n#blockRemoveOneUser#0;n#!!block;n#createMarkdown#0;n#UserApi#0" />
+            <element signature="n#!!block;n#blockUpdateUser#0;n#!!block;n#createMarkdown#0;n#UserApi#0" />
+            <element signature="n#!!block;n#addListenerToButton#0;n#!!block;n#createMarkdown#0;n#UserApi#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-200">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
-          <folding>
-            <element signature="e#14#921#0" />
-            <element signature="n#!!block;n#getAllUsers#0;n#UserApi#0" />
-            <element signature="n#!!block;n#getUserById#0;n#UserApi#0" />
-            <element signature="n#!!block;n#removeUser#0;n#UserApi#0" />
-            <element signature="n#!!block;n#updateUser#0;n#UserApi#0" />
-          </folding>
+        <state relative-caret-position="155">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/new.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-965">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
         </state>
       </provider>
     </entry>

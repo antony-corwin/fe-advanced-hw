@@ -10,8 +10,63 @@
 </head>
 
 <body>
-<div class="container"></div>
-<script src="./js/index.js"></script>
+<div class="menu">
+    <div class="menu-block menu-get-all-users">
+        <button class="btn js-get-all-users" type="button">Get all users</button>
+        <ul class="list-group js-all-users-group">
+        </ul>
+    </div>
+    <div class="menu-block menu-get-one-user">
+        <button class="btn js-get-user-by-id" type="button">Get user by ID</button>
+        <div class="input-group">
+            <div class="input-label">
+                <span>UID</span>
+            </div>
+            <input class="js-get-by-id" type="text" placeholder=" Enter user's ID"></div>
+        <ul class="list-group js-one-user-group">
+            <li class="list-info-item js-user"></li>
+        </ul>
+    </div>
+    <div class="menu-block menu-create-user">
+        <button class="btn js-create-user" type="button">Create new user</button>
+        <div class="input-group">
+            <div class="input-label">
+                <span>Name</span>
+            </div>
+            <input class="js-name-value" type="text" placeholder=" Enter user's name"></div>
+        <div class="input-group">
+            <div class="input-label"><span>Age</span>
+            </div>
+            <input class="js-age-value" type="text" placeholder=" Enter user's age"></div>
+        <ul class="list-group js-create-user-group">
+        </ul>
+    </div>
+    <div class="menu-block menu-remove-one-user">
+        <button class="btn js-remove-user" type="button">Remove user by ID</button>
+        <div class="input-group">
+            <div class="input-label">
+                <span>UID</span>
+            </div>
+            <input class="js-remove-by-id" type="text" placeholder=" Enter user's ID">
+        </div>
+        <ul class="list-group js-remove-user-group"></ul>
+    </div>
+    <div class="menu-block menu-update-user">
+        <button class="btn js-update-user" type="button">Update user by ID</button>
+        <div class="input-group">
+            <div class="input-label">
+                <span> Name </span>
+            </div>
+            <input class="js-name-value" type="text" placeholder=" Enter user's name"></div>
+        <div class="input-group">
+            <div class="input-label">
+                <span>Age</span></div>
+            <input class="js-age-value" type="text" placeholder=" Enter user's age">
+        </div>
+        <ul class="list-group js-update-user-group"></ul>
+    </div>
+</div>
+<script src="./js/new.js"></script>
 </body>
 
 </html>
