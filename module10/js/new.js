@@ -62,18 +62,8 @@ class FetchApi {
                 }
             })
             .then(obj => {
-                let user = obj.data;
-                let li = document.querySelector(".js-create-user-group");
-                li.textContent = "";
-                let pID = document.createElement("p");
-                let pName = document.createElement("p");
-                let pAge = document.createElement("p");
-                pID.textContent = `UID: ${user._id}`;
-                pName.textContent = `User name: ${user.name}`;
-                pAge.textContent = `User age: ${user.age}`;
-                li.append(pID, pName, pAge);
+                createUserInfo(obj.data, 'js-create-user-group');
             })
-            .catch(err => console.log(err));
     }
 
     removeUser(userId) {
@@ -90,14 +80,6 @@ class FetchApi {
                 } else {
                     throw new Error(`ERROR: ${response.statusText}`);
                 }
-            })
-            .then(obj => {
-                const li = document.createElement('li');
-                const ul = document.querySelector('.js-remove-user-group');
-                li.textContent = `User ID: ${userId} has been removed`;
-                ul.append(li);
-                const input = document.querySelector(".js-remove-by-id");
-                input.value = '';
             })
     }
 
@@ -116,12 +98,6 @@ class FetchApi {
                 } else {
                     throw new Error(`ERROR: ${response.statusText}`);
                 }
-            })
-            .then(data => {
-                    document.querySelector(".js-update-user-group").textContent = `User ID: ${data.data.id} has been updated`;
-                    document.querySelector(".js-update-id").value = "";
-                    document.querySelector(".js-update-name").value = "";
-                    document.querySelector(".js-update-age").value = "";
             })
     }
 }
@@ -160,9 +136,6 @@ function getAllUsers() {
 }
 
 function getUserById() {
-    // const ul = document.querySelector('.js-all-users-group');
-    // const allUsers = document.querySelectorAll('.user-item');
-    // ul.remove();
     const userId = document.querySelector(".js-get-by-id").value;
     users.byId(userId);
 }
@@ -181,6 +154,12 @@ function addNewUser() {
 function removeUserById() {
     const userId = document.querySelector(".js-remove-by-id").value;
     users.removeUser(userId);
+    const li = document.createElement('li');
+    const ul = document.querySelector('.js-remove-user-group');
+    li.textContent = `User ID: ${userId} has been removed`;
+    ul.append(li);
+    const input = document.querySelector(".js-remove-by-id");
+    input.value = '';
 }
 
 function updateUser() {
@@ -191,4 +170,11 @@ function updateUser() {
     user.name = userName;
     user.age = +userAge;
     users.updateUser(userId, user);
+    const li = document.createElement('li');
+    const ul = document.querySelector('.js-update-user-group');
+    li.textContent = `User ID: ${userId} has been updated`;
+    ul.append(li);
+    document.querySelector(".js-update-id").value = "";
+    document.querySelector(".js-update-name").value = "";
+    document.querySelector(".js-update-age").value = "";
 }
