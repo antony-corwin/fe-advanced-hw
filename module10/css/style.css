@@ -68,15 +68,24 @@ input {
 }
 
 ul {
-    padding-inline-start: 10px;
+    padding-inline-start: 0px;
+
 }
 
 li {
     list-style: none;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 6px;
+    background-color: white;
+    margin-right: 3px;
 }
 
 p {
     width: 222px;
+    margin: 0 2px;
 }
 
 .delete-info {

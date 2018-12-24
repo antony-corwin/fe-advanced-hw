@@ -144,9 +144,6 @@ class UserApi {
             pName.textContent = `User name: ${user.name}`;
             pAge.textContent = `User age: ${user.age}`;
             li.append(pID, pName, pAge);
-            swal("User added", `UID: ${user._id}`, "success");
-          } else {
-            swal("Try again", "Something gonna wrong", "error");
           }
         }
       })
@@ -177,9 +174,7 @@ class UserApi {
         document.querySelector(".js-user").textContent = "";
         document.querySelector("#js-update-info").textContent = "";
         if (obj.status === 200) {
-          document.querySelector(
-            "#js-delete-info"
-          ).textContent = `User ID: ${userId} has been removed`;
+          document.querySelector("#js-delete-info").textContent = `User ID: ${userId} has been removed`;
         }
       })
       .catch(err => console.log(err));
